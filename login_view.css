@@ -1,0 +1,55 @@
+#element-1 {
+
+    padding: 7em;
+}
+
+.logo-login {
+    margin: 10px auto;
+}
+
+#element-2 {
+
+    padding: 10px;
+}
+
+.auth-form input {
+
+    margin: 10px auto;
+
+}
+
+#element-3 {
+
+    display: flex;
+    justify-content: center;
+}
+
+.secondary-links {
+
+
+    margin: 1.5em;
+}
+
+/*Setting up a grid elements*/
+@media(min-width:700px) {
+    body{
+
+        font-size: 16pt;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    #element-1 img{
+
+        grid-column:2/4;
+    }
+    #element-2 .auth-form{
+
+        grid-column:2/4;
+    }
+    #element-3 img{
+
+        grid-column:2/4;
+    }
+}

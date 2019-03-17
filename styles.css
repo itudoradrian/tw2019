@@ -1,0 +1,113 @@
+body{
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 14pt;
+}
+
+img{
+    display: block;
+}
+/*Sets the logo as a circle*/
+.logo-login{
+
+    width: 10em;
+    height: auto;
+    border-radius: 50%;
+}
+.logo-register{
+
+    width: 7em;
+    height: auto;
+    border-radius: 50%;
+}
+.auth-form{
+
+    display: block;
+}
+.auth-form input{
+
+    display: block;
+    border-style: none;
+    margin: 15px;
+    padding-left: 10px;
+    width: 25em;
+    height: 3em;
+}
+.auth-form input[type="text"]
+{
+    background: #C8C1C1;
+    color:#333;
+}
+.auth-form input[type="submit"]
+{
+    margin-top:2em;
+    width: 15em;
+}
+.btn{
+
+    background: #2690d4;
+    color: azure;
+}
+.auth-btn:hover{
+
+    background: #90c5e6;
+}
+.secondary-links{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-bar{
+
+    background: #666;
+}
+.section-title{
+
+    font-size: 1.25em;
+    width: 50%;
+    margin: 3em auto 0.5em;
+}
+.status-list{
+
+    background: #666;
+    width: 50%;
+    margin: 10px auto;
+    border-style: solid;
+    border-color: #999999;
+    border-width: 2px;
+    
+}
+.status-list li{
+
+    padding-left: 10px;
+    margin: 0.5em 0.7em;
+}
+.status-list li:hover{
+
+    color:  #90c5e6;
+}
+.history-list{
+
+    background: #666;
+    width: 50%;
+    margin: 10px auto;
+    list-style: none;
+    padding: 0;
+}
+.history-list li{
+
+    padding: 15px 0;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    text-align: center;
+    
+}
+.history-list li:hover{
+
+    background: #90c5e6;
+}
