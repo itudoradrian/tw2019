@@ -9,23 +9,29 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <nav class="nav-bar"></nav>
+    <nav class="nav-bar">
+        <!--Neimplementat-->
+    </nav>
     <div id="friends-list">
         <h2 class="section-title">Friends List</h2>
         <!--Status list is for online status of the users -->
         <ul class="status-list">
-            <li>username 1</li>
-            <li>username 2</li>
-            <li>username 3</li>
+            <li><a href="#" class="secondary-links">username 1</a></li>
+            <li><a href="#" class="secondary-links">username 2</a></li>
+            <li><a href="#" class="secondary-links">username 3</a></li>
         </ul>
     </div>
     <!--Istoricul de sesiuni, display maxim 5-->
     <div id="sessions-history">
         <h2 class="section-title">Historic</h2>
-        <button class="add-button">
-            <!--Animatie pentru butonul plus-->
-            Add/Remove
-        </button>
+
+        <!--Div pentru centrarea butonului-->
+        <div class="button-container">
+            <button class="add-button">
+                <img src="plus.png" class="add-img">
+            </button>
+        </div>
+        <!--Utimele 5-->
         <ul class="history-list">
             <li>joc1-data</li>
             <li>joc2-data</li>

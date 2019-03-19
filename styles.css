@@ -1,3 +1,5 @@
+
+/* Default styles pentru elemente*/
 body{
 
     margin: 0;
@@ -10,7 +12,11 @@ body{
 img{
     display: block;
 }
-/*Sets the logo as a circle*/
+
+
+/*  Style pentru logo de login si register.
+Note: Difera dimensiunile putin intre ele
+*/
 .logo-login{
 
     width: 10em;
@@ -23,6 +29,11 @@ img{
     height: auto;
     border-radius: 50%;
 }
+
+
+/*  Style pentru formurile ce au legatura cu procesul
+de autentificare
+*/
 .auth-form{
 
     display: block;
@@ -46,55 +57,72 @@ img{
     margin-top:2em;
     width: 15em;
 }
+
+/*  Un style general pentru toate butoanele importante*/
 .btn{
 
     background: #2690d4;
     color: azure;
 }
-.auth-btn:hover{
+.btn:hover{
 
     background: #90c5e6;
 }
+
+
+/*  Style pentru linkuri ce nu au importanta primara
+*/
 .secondary-links{
     
     display: inline-block;
     text-decoration: none;
-    color: aliceblue;
+    color: #999;
 }
+.secondary-links:hover{
+    
+    color:aliceblue;
+}
+
+/*Inca neimplementat*/
 .nav-bar{
 
     background: #666;
 }
+
+/*Style pentru subtitlurile sectiunilor*/
 .section-title{
 
     font-size: 1.25em;
     width: 50%;
-    margin: 3em auto 0.5em;
 }
+
+/*  Style pentru lista de prieteni si statutul de online sau ofline
+    Note: trebuie implementata o metoda de vizualizare a statusului
+*/
 .status-list{
 
-    background: #666;
-    width: 50%;
-    margin: 10px auto;
-    border-style: solid;
-    border-color: #999999;
-    border-width: 2px;
+    background: #444;
+    width: 60%;
+    padding-left: 15px;
+    list-style-position: inside;
     
 }
 .status-list li{
 
-    padding-left: 10px;
-    margin: 0.5em 0.7em;
+    margin: 20px 0;
+    padding: 10px 0;
 }
 .status-list li:hover{
 
     color:  #90c5e6;
 }
+
+
+/*  Style pentru istoricul de sesiuni*/
 .history-list{
 
     background: #666;
-    width: 50%;
-    margin: 10px auto;
+    width: 70%;
     list-style: none;
     padding: 0;
 }
@@ -102,6 +130,7 @@ img{
 
     padding: 15px 0;
     border-style: solid;
+    border-color: #333;
     border-width: 1px;
     width: 100%;
     text-align: center;
@@ -111,3 +140,31 @@ img{
 
     background: #90c5e6;
 }
+
+/* Style buton de add*/
+.add-button{
+    
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border-style: none;
+    background: #2690d4;
+}
+/* Implementarea animatiei de transformare in x a plusului
+    Aste e doar demonstrativa pentru moment
+    Vom recurge la alta metoda cand introducem javascript*/
+.add-button:hover{
+
+    background: #90c5e6;
+    transform: rotate(45deg);
+}
+/* Style pentru imaginea de plus*/
+.add-img{
+
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding: 0;
+}
+
+/*Style pentru adaugarea unei sesiuni de joc*/

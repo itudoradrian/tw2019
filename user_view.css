@@ -1,0 +1,20 @@
+
+/*All page positioning styles are here*/
+
+/*Pentru centrarea elementulor in mobile view*/
+.section-title{
+    margin: 3em auto 0.5em;
+}
+.status-list{
+    margin: 10px auto;
+}
+.history-list{
+    margin: 10px auto;
+}
+
+/*Aparent pentru centrarea unui buton trebuie text-align*/
+.button-container{
+
+    width: 100%;
+    text-align: center;
+}

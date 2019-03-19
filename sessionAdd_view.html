@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sessionAdd_view.css">
+    <title>Add session</title>
+</head>
+<body>
+    <nav class="nav-bar">
+
+    </nav>
+    <form  class="session-register">
+        <label for="game">Chose game</label>
+        <input type="select" name="game" id="game">
+        <label for="player">Chose players</label>
+        <input type="select" name="player" id="player">
+        <ul class="history-list">
+            <li>Player 1</li>
+        </ul>
+        <label for="matchLength">Match Length</label>
+        <input type="time" name="matchLength" id="matchLength">
+        <input type="radio" name="outcome" value="victory" checked> Victory
+        <input type="radio" name="outcome" value="lose"> Lose
+        <input type="submit" value="Add" class="btn">
+    </form>
+</body>
+</html>
