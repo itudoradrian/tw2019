@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="user_view.css">
-    <title>Dashboard</title>
-</head>
-<body>
-    <nav class="nav-bar">
-        <!--Neimplementat-->
-    </nav>
-    <div id="friends-list">
-        <h2 class="section-title">Friends List</h2>
-        <!--Status list is for online status of the users -->
-        <ul class="status-list">
-            <li><a href="#" class="secondary-links">username 1</a></li>
-            <li><a href="#" class="secondary-links">username 2</a></li>
-            <li><a href="#" class="secondary-links">username 3</a></li>
-        </ul>
-    </div>
-    <!--Istoricul de sesiuni, display maxim 5-->
-    <div id="sessions-history">
-        <h2 class="section-title">Historic</h2>
 
-        <!--Div pentru centrarea butonului-->
-        <div class="button-container">
-            <button class="add-button">
-                <img src="plus.png" class="add-img">
-            </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="user_view.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- Navigatorul -->
+    <div class="article-nav-container">
+        <div class="article-nav">
+        
+          <div class="menu-items">
+            <a href="#"></a>
+            <a href="#">Groups</a>
+            <a href="#">Sessions</a>
+            <a href="#">Statistics</a>
+          </div>
+    
+          <a href="#" class="logo">LOGO</a>
+          <a href='#' class="logout">Logout</a>
         </div>
-        <!--Utimele 5-->
-        <ul class="history-list">
-            <li>joc1-data</li>
-            <li>joc2-data</li>
-            <li>joc3-data</li>
-            <li>joc4-data</li>
-            <li>joc5-data</li>
-        </ul>
+      </div>
+ 
+  <div id="friends-list">
+    <h2 class="section-title">Friends List</h2>
+    <!--Status list is for online status of the users -->
+    <ul class="status-list">
+      <li><a href="#" class="secondary-links">username 1</a></li>
+      <li><a href="#" class="secondary-links">username 2</a></li>
+      <li><a href="#" class="secondary-links">username 3</a></li>
+    </ul>
+  </div>
+  <!--Istoricul de sesiuni, display maxim 5-->
+  <div id="sessions-history">
+    <h2 class="section-title">History</h2>
+
+    <!--Div pentru centrarea butonului-->
+    <div class="button-container">
+      <button class="add-button">
+        <img src="plus.png" class="add-img">
+      </button>
     </div>
+    <!--Utimele 5-->
+    <ul class="history-list">
+      <li href="#">joc1-data</li>
+      <li href="#">joc2-data</li>
+      <li href="#">joc3-data</li>
+      <li href="#">joc4-data</li>
+      <li href="#">joc5-data</li>
+    </ul>
+  </div>
 </body>
+
 </html>

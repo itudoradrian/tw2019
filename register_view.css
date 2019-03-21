@@ -1,1 +1,68 @@
 /*All page positioning styles are here*/
+
+/*All page positioning styles are here*/
+#element-1 {
+
+    padding: 7em;
+}
+
+.logo-login {
+    margin: 10px auto;
+}
+
+#element-2 {
+
+    padding: 10px;
+}
+
+.auth-form input {
+
+    margin: 10px auto;
+
+}
+
+#element-3 {
+
+    display: flex;
+    justify-content: center;
+}
+
+.secondary-links {
+    margin: 1.5em;
+}
+
+
+/*  Structura layout ului in display de marime mai mare*/
+@media(min-width:700px) {
+    body{
+
+        font-size: 16pt;
+    }
+    /* Explicatie: fiecare div container din html care contine clasa grid
+        schimba display ul in grid de 4 coloane
+        Elementele cuprinse in fiecare div container va ocupa cele doua coloane din mijloc
+    */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    #element-1 img{
+
+        grid-column:2/4;
+    }
+    #element-2 .auth-form{
+
+        grid-column:2/4;
+    }
+    #element-3 img{
+
+        grid-column:2/4;
+    }
+
+    #login-register.secondary-links {
+        text-align: justify;
+        display: block;
+        text-align: center;
+    }
+    
+}
