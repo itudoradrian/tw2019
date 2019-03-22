@@ -12,7 +12,9 @@ body{
 img{
     display: block;
 }
-
+svg{
+    display: block;
+}
 
 /*  Style pentru logo de login si register.
 Note: Difera dimensiunile putin intre ele
@@ -21,13 +23,13 @@ Note: Difera dimensiunile putin intre ele
 
     width: 10em;
     height: auto;
-    border-radius: 50%;
+    
 }
 .logo-register{
 
     width: 7em;
     height: auto;
-    border-radius: 50%;
+    
 }
 
 
