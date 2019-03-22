@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,52 @@
     <link rel="stylesheet" href="sessionAdd_view.css">
     <title>Add session</title>
 </head>
-<body>
-    <nav class="nav-bar">
 
-    </nav>
-    <form  class="session-register">
-        <label for="game">Chose game</label>
-        <input type="select" name="game" id="game">
-        <label for="player">Chose players</label>
-        <input type="select" name="player" id="player">
-        <ul class="history-list">
+<body>
+    <!-- Navigatorul -->
+    <div class="article-nav-container">
+        <div class="article-nav">
+
+            <div class="menu-items">
+                <a href="#"></a>
+                <a href="#">Groups</a>
+                <a href="#">Sessions</a>
+                <a href="#">Statistics</a>
+            </div>
+
+            <a href="#" class="logo">LOGO</a>
+            <a href='#' class="logout">Logout</a>
+        </div>
+    </div>
+    <form class="session-register">
+        <div class="fields">
+            <label for="game">Chose game</label>
+            <input type="select" name="game" id="game">
+            <label for="player">Chose players</label>
+            <input type="select" name="player" id="player">
+        </div>
+
+        <div class="history-list">
+
             <li>Player 1</li>
-        </ul>
-        <label for="matchLength">Match Length</label>
-        <input type="time" name="matchLength" id="matchLength">
-        <input type="radio" name="outcome" value="victory" checked> Victory
-        <input type="radio" name="outcome" value="lose"> Lose
-        <input type="submit" value="Add" class="btn">
+            <li>Player 2</li>
+            <li>Player 3</li>
+            <li>Player 4</li>
+
+        </div>
+
+        <div class="match">
+            <label for="matchLength">Match Length</label>
+            <input type="time" name="matchLength" id="matchLength"></input>
+            <div class="vl">
+                <input type="radio" name="outcome" value="victory" checked> Victory</input>
+                <input type="radio" name="outcome" value="lose">Lose</input>
+            </div>
+
+            <input type="submit" value="Add" class="btn">
+        </div>
+
     </form>
 </body>
+
 </html>
