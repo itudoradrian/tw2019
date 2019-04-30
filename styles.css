@@ -1,6 +1,5 @@
-
 /* Default styles pentru elemente*/
-body{
+body {
 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,38 +8,41 @@ body{
     font-size: 14pt;
 }
 
-img{
+img {
     display: block;
 }
-svg{
+
+svg {
     display: block;
 }
 
 /*  Style pentru logo de login si register.
 Note: Difera dimensiunile putin intre ele
 */
-.logo-login{
+.logo-login {
 
     width: 10em;
     height: auto;
-    
+
 }
-.logo-register{
+
+.logo-register {
 
     width: 7em;
     height: auto;
-    
+
 }
 
 
 /*  Style pentru formurile ce au legatura cu procesul
 de autentificare
 */
-.auth-form{
+.auth-form {
 
     display: block;
 }
-.auth-form input{
+
+.auth-form input {
 
     display: block;
     border-style: none;
@@ -49,24 +51,25 @@ de autentificare
     width: 25em;
     height: 3em;
 }
-.auth-form input[type="text"]
-{
+
+.auth-form input[type="text"] {
     background: #C8C1C1;
-    color:#333;
+    color: #333;
 }
-.auth-form input[type="submit"]
-{
-    margin-top:2em;
+
+.auth-form input[type="submit"] {
+    margin-top: 2em;
     width: 15em;
 }
 
 /*  Un style general pentru toate butoanele importante*/
-.btn{
+.btn {
 
     background: #2690d4;
     color: azure;
 }
-.btn:hover{
+
+.btn:hover {
 
     background: #90c5e6;
 }
@@ -74,25 +77,26 @@ de autentificare
 
 /*  Style pentru linkuri ce nu au importanta primara
 */
-.secondary-links{
-    
+.secondary-links {
+
     display: inline-block;
     text-decoration: none;
     color: #999;
 }
-.secondary-links:hover{
-    
-    color:aliceblue;
+
+.secondary-links:hover {
+
+    color: aliceblue;
 }
 
 /*Inca neimplementat*/
-.nav-bar{
+.nav-bar {
 
     background: #666;
 }
 
 /*Style pentru subtitlurile sectiunilor*/
-.section-title{
+.section-title {
 
     font-size: 1.25em;
     width: 50%;
@@ -101,34 +105,37 @@ de autentificare
 /*  Style pentru lista de prieteni si statutul de online sau ofline
     Note: trebuie implementata o metoda de vizualizare a statusului
 */
-.status-list{
+.status-list {
 
     background: #444;
     width: 60%;
     padding-left: 15px;
     list-style-position: inside;
-    
+
 }
-.status-list li{
+
+.status-list li {
 
     margin: 20px 0;
     padding: 10px 0;
 }
-.status-list li:hover{
 
-    color:  #90c5e6;
+.status-list li:hover {
+
+    color: #90c5e6;
 }
 
 
 /*  Style pentru istoricul de sesiuni*/
-.history-list{
+.history-list {
 
     background: #666;
     width: 70%;
     list-style: none;
     padding: 0;
 }
-.history-list li{
+
+.history-list li {
 
     padding: 15px 0;
     border-style: solid;
@@ -136,32 +143,35 @@ de autentificare
     border-width: 1px;
     width: 100%;
     text-align: center;
-    
+
 }
-.history-list li:hover{
+
+.history-list li:hover {
 
     background: #90c5e6;
 }
 
 /* Style buton de add*/
-.add-button{
-    
+.add-button {
+
     width: 4em;
     height: 4em;
     border-radius: 50%;
     border-style: none;
     background: #2690d4;
 }
+
 /* Implementarea animatiei de transformare in x a plusului
     Aste e doar demonstrativa pentru moment
     Vom recurge la alta metoda cand introducem javascript*/
-.add-button:hover{
+.add-button:hover {
 
     background: #90c5e6;
     transform: rotate(45deg);
 }
+
 /* Style pentru imaginea de plus*/
-.add-img{
+.add-img {
 
     width: 100%;
     height: auto;
@@ -170,3 +180,84 @@ de autentificare
 }
 
 /*Style pentru adaugarea unei sesiuni de joc*/
+
+
+/*Nav barul*/
+.article-nav-container {
+    background: #666;
+    width: 100%;
+}
+
+.article-nav {
+    display: grid;
+    text-align: center;
+    max-width: 1720px;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.article-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-items {
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-bottom-width: 0.01rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 340;
+    padding: 15px;
+    letter-spacing: 1px;
+    grid-gap: 15px;
+    align-self: center;
+
+}
+
+.menu-items a {
+    display: grid;
+
+}
+
+.logout {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    grid-gap: 10px;
+    align-self: center;
+}
+
+.menu-items a:hover {
+    opacity: .6;
+}
+
+.logout:hover {
+    opacity: .6;
+}
+
+.logo {
+    display: none;
+}
+
+/*Table view styles*/
+.table-display th{
+
+    border-width: 1px;
+    border-bottom: solid;
+    
+}
+.table-display th:nth-child(even){
+
+    
+    border-left: solid;
+    border-right: solid;
+}
+.table-display td:nth-child(even){
+
+    border-top-style: solid;
+}

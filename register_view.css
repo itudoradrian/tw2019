@@ -6,7 +6,7 @@
     padding: 7em;
 }
 
-.logo-login {
+.logo-register {
     margin: 10px auto;
 }
 
@@ -19,12 +19,6 @@
 
     margin: 10px auto;
 
-}
-
-#element-3 {
-
-    display: flex;
-    justify-content: center;
 }
 
 .secondary-links {
